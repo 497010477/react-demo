@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import LikeButton from './LikeButton';
+import CommentApp from './CommentApp';
 
 class App extends Component {
   constructor(){
@@ -72,6 +73,7 @@ class App extends Component {
         <input type="submit" value="Submit" />
       </form>
       <LikeButton isLiked={this.state.isLiked} buttonClick={this.handleBtnClick} />
+      <CommentApp />
       </div>
     );
   }
